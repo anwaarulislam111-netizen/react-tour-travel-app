@@ -1,0 +1,38 @@
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.footer h2{
+    margin-bottom:20px;
+}
+
+.footer p{
+    width:600px;
+    max-width:100%;
+    margin:auto;
+    line-height:1.8;
+}
+
+.social{
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.social a{
+    color:white;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#00c3ff;
+}
+
+.footer h4{
+    margin-top:25px;
+    font-weight:400;
+}
