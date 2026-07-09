@@ -74,3 +74,31 @@
 .card button:hover{
     background:#0099cc;
 }
+
+.card{
+    background:#fff;
+    color:#000;
+}
+
+.card h3,
+.card p,
+.card span{
+    color:#000;
+}
+
+.info button{
+    background:#0099ff;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.card{
+    width:100%;
+}
+
+}

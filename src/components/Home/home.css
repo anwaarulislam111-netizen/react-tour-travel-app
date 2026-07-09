@@ -92,3 +92,22 @@
 .searchBtn:hover{
     background:#0086cc;
 }
+
+.cardDiv{
+    background:#fff;
+    color:#000;
+}
+
+.inputBox label{
+    color:#000;
+}
+
+.inputBox input{
+    color:#000;
+    background:#fff;
+}
+
+.searchBtn{
+    background:#0099ff;
+    color:#fff;
+}
