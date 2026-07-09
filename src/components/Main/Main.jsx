@@ -1,37 +1,48 @@
+import Maldives from "../../assets/maldives.jpg";
+import Switzerland from "../../assets/switzerland.jpg";
+import Dubai from "../../assets/dubai.jpg";
+import Turkey from "../../assets/turkey.jpg";
+
+
+
 import "./main.css";
 
 const data = [
   {
     id: 1,
     title: "Maldives",
+    image: Maldives,
     price: "$999",
     days: "5 Days / 4 Nights",
     rating: "⭐⭐⭐⭐⭐",
-    description: "Enjoy crystal clear water and luxury resorts."
+    desc: "Enjoy crystal clear beaches and luxury resorts."
   },
   {
     id: 2,
     title: "Dubai",
+    image: Dubai,
     price: "$799",
     days: "4 Days / 3 Nights",
     rating: "⭐⭐⭐⭐",
-    description: "Experience modern city life and desert safari."
+    desc: "Visit Burj Khalifa, Desert Safari and Dubai Mall."
   },
   {
     id: 3,
-    title: "Turkey",
-    price: "$899",
+    title: "Paris",
+    image: Paris,
+    price: "$1299",
     days: "6 Days / 5 Nights",
     rating: "⭐⭐⭐⭐⭐",
-    description: "Visit Istanbul, Cappadocia and beautiful beaches."
+    desc: "Experience the Eiffel Tower and romantic streets."
   },
   {
     id: 4,
-    title: "Switzerland",
-    price: "$1299",
-    days: "7 Days / 6 Nights",
+    title: "Turkey",
+    image: Turkey,
+    price: "$899",
+    days: "5 Days / 4 Nights",
     rating: "⭐⭐⭐⭐⭐",
-    description: "Snow mountains and amazing natural beauty."
+    desc: "Explore Istanbul, Cappadocia and beautiful history."
   }
 ];
 
@@ -43,8 +54,9 @@ function Main() {
       <div className="cardContainer">
         {data.map((item) => (
           <div className="card" key={item.id}>
+            <img src={item.image} alt={item.title} />
             <h2>{item.title}</h2>
-            <p>{item.description}</p>
+            <p>{item.desc}</p>
             <h4>{item.days}</h4>
             <h3>{item.price}</h3>
             <p>{item.rating}</p>
