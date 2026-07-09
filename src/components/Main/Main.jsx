@@ -1,8 +1,7 @@
-import Maldives from "../../assets/maldives.jpg";
-import Switzerland from "../../assets/switzerland.jpg";
-import Dubai from "../../assets/dubai.jpg";
-import Turkey from "../../assets/turkey.jpg";
-
+import Maldives from "../../assets/Maldives.jpg";
+import Dubai from "../../assets/Dubai.jpg";
+import Switzerland from "../../assets/Switzerland.jpg";
+import Turkey from "../../assets/Turkey.jpg";
 
 
 import "./main.css";
@@ -28,8 +27,8 @@ const data = [
   },
   {
     id: 3,
-    title: "Paris",
-    image: Paris,
+    title: "Switzerland",
+    image: Switzerland,
     price: "$1299",
     days: "6 Days / 5 Nights",
     rating: "⭐⭐⭐⭐⭐",
@@ -48,23 +47,28 @@ const data = [
 
 function Main() {
   return (
-    <section className="main" id="packages">
-      <h1 className="title">Popular Destinations</h1>
+<section className="main" id="packages">
+  <h1 className="title">Popular Destinations</h1>
 
-      <div className="cardContainer">
-        {data.map((item) => (
-          <div className="card" key={item.id}>
-            <img src={item.image} alt={item.title} />
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
-            <h4>{item.days}</h4>
-            <h3>{item.price}</h3>
-            <p>{item.rating}</p>
-            <button className="bookBtn">Book Now</button>
-          </div>
-        ))}
+  <div className="cards">
+    {data.map((item) => (
+      <div className="card" key={item.id}>
+        <img src={item.image} alt={item.title} />
+
+        <div className="info">
+          <h2>{item.title}</h2>
+          <p>{item.desc}</p>
+          <h4>{item.days}</h4>
+          <h3>{item.price}</h3>
+          <span>{item.rating}</span>
+
+          <button>Book Now</button>
+        </div>
+
       </div>
-    </section>
+    ))}
+  </div>
+</section>
   );
 }
 
