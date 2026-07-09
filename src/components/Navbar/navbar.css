@@ -38,3 +38,51 @@
     justify-content:center;
   }
 }
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.btn{
+    padding:10px 20px;
+    background:#0099ff;
+    color:#fff;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.header{
+    padding:15px;
+    flex-direction:column;
+}
+
+.navBar{
+    width:100%;
+    justify-content:center;
+    gap:8px;
+}
+
+.navBtn{
+    display:block;
+    padding:10px 14px;
+    font-size:14px;
+}
+
+.logo h2{
+    font-size:22px;
+}
+
+.btn{
+    width:180px;
+}
+
+}

@@ -102,3 +102,42 @@
 }
 
 }
+
+@media(max-width:768px){
+
+.main{
+    padding:40px 15px;
+}
+
+.title h1{
+    font-size:30px;
+}
+
+.title p{
+    font-size:15px;
+}
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.card{
+    width:100%;
+    padding:20px;
+}
+
+.card h2{
+    font-size:22px;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+.card button{
+    width:100%;
+}
+
+}

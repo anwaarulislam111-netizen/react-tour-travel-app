@@ -111,3 +111,46 @@
     background:#0099ff;
     color:#fff;
 }
+
+@media(max-width:768px){
+
+.home{
+    min-height:100vh;
+}
+
+.homeContent{
+    width:95%;
+}
+
+.homeContent h3{
+    font-size:18px;
+}
+
+.homeContent h1{
+    font-size:34px;
+}
+
+.homeContent p{
+    font-size:15px;
+}
+
+.cardDiv{
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+}
+
+.inputBox{
+    width:100%;
+}
+
+.inputBox input{
+    width:100%;
+}
+
+.searchBtn{
+    width:100%;
+    margin-top:10px;
+}
+
+}
