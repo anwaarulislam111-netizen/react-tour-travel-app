@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./main.css";
 
 const data = [
   {

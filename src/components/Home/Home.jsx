@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import Video from "../../assets/Video.mp4";
 
 function Home() {
